@@ -1,15 +1,18 @@
-name: Deploy
+name: Trigger Repo2 Workflow
 on:
-  workflow_dispatch:
-  push:
-    branches:
-      - main
+  workflow_run:
+    workflows: ["My Repo2 Workflow"]
+    types:
+      - completed
+
 jobs:
-  build:
-    name: Run API
+  trigger-repo2:
     runs-on: ubuntu-latest
     steps:
-      - name: Build API
-        run: |
-          echo "Build API"
-          sleep 10s
+      - name: Trigger Repo2 Workflow
+        uses: peter-evans/repository-dispatch@v1
+        with:
+          repository: your-username/repo2
+          token:  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
+          # You need to create a Personal Access Token (PAT) in repo1's settings with repo scope and add it as a secret.
+
