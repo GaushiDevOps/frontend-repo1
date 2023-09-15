@@ -14,6 +14,6 @@ jobs:
         uses: peter-evans/repository-dispatch@v1
         with:
           repository: GaushiDevOps/backend-repo2
-          token:  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
+          token:  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
           # You need to create a Personal Access Token (PAT) in repo1's settings with repo scope and add it as a secret.
 
