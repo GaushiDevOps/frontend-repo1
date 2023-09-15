@@ -12,7 +12,7 @@ jobs:
       - name: Trigger Repo2 Workflow
         uses: peter-evans/repository-dispatch@v1
         with:
-          repository: your-username/repo2
+          repository: GaushiDevOps/backend-repo2
           token:  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
           # You need to create a Personal Access Token (PAT) in repo1's settings with repo scope and add it as a secret.
 
