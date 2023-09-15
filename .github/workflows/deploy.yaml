@@ -1,5 +1,6 @@
 name: Trigger Repo2 Workflow
 on:
+  workflow_dispatch: 
   workflow_run:
     workflows: ["My Repo2 Workflow"]
     types:
