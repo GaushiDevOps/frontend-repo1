@@ -8,7 +8,7 @@ jobs:
       - name: Trigger the automated test in repo2
         uses: peter-evans/repository-dispatch@v2
         with:
-          token: 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
+          token: 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
           repository: GaushiDevOps/backend-repo2
           event-type: my-event
           client-payload: '{"github": ${{ toJson(github) }}}'
